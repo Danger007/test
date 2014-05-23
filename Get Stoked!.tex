@@ -1,0 +1,199 @@
+\documentclass[a4paper, 12pt]{article} %font size should be 10pt, 11pt, or 12pt.
+
+%These are various standard packages that are usually needed
+% to write a mathematical document.  The setspace package
+% will allow us to use either single spaceing, double spacing,
+% or 1.5 spacing throughout the document.  The geometry package
+% allows us to set the margins of the document
+
+\usepackage{amsmath} %math stuff
+\usepackage{amsthm}   %math stuff
+\usepackage{amsfonts}  %math stuff
+\usepackage{amssymb} %math stuff
+\usepackage{setspace}  %set spacing
+\usepackage{geometry}  %set margins
+\usepackage{bm} 	        %allows boldface characters in math mode
+\usepackage{graphicx}
+% set margins - Do not make margins any bigger!
+\geometry{
+left=   1.0in,
+right=  1.0in,
+top=    1.0in,
+bottom= 1.0in
+}
+
+%\doublespacing %uncomment for double spacing
+\onehalfspacing %uncomment for 1.5 spacing
+%\singlespacing    %uncomment for single spacing
+
+\allowdisplaybreaks[4] %this command is rather technical, but basically, it allows equations in math mode
+%to appear on different pages
+
+\numberwithin{equation}{section}
+
+% We can define our own commands (shortcuts)!
+\newcommand{\tbs}{\textbackslash}
+\newcommand{\p}{\partial}
+\newcommand{\Ome}{\Omega}
+\newcommand{\pol}{\mathcal{P}}
+\newcommand{\bpol}{\boldsymbol{\mathcal{P}}}
+\newcommand{\curl}{{\ensuremath\mathop{\mathrm{curl}\,}}}
+\newcommand{\bcurl}{{\boldsymbol{\curl}}}
+\newcommand{\Div}{{\rm div}\,}
+\newcommand{\bv}{\bm v}
+\newcommand{\Dim}{{\rm dim}\,}
+
+
+% Declare various useful environments
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+
+
+
+\title[Gaffur: Practice Exam]{Get Stoked: A collaborative effort between Justin and Yara}
+
+\author[MAC Tutoring]{Justin Gaffur: \hspace{2mm}  \underline{MAC Tutoring} \hspace{35mm} \textbf{Score:}}
+
+
+
+% start the document
+\begin{document}
+\maketitle %
+
+\textbf{Directions: Answer all parts of each question, making sure to show ALL of your work.}
+\begin{enumerate}
+\item[\textbf{1.}] (10 points): Find the curvature of $\vec{r}(t)$ if $\vec{r}\hspace{1mm}(t)=\langle \sqrt{2}\cos(t), \sin(t), \sin(t) \rangle$.
+\vspace{75mm}
+
+\item[\textbf{2.}] Find each of the following limits or show that they don't exist.
+\begin{enumerate}
+\item[\textbf{(a)}] (5 points):
+$$
+\lim_{(x,y)\to (0,0)}\frac{2x^2y}{x^4+y^2}
+$$
+\vspace{60mm}
+\item[\textbf{(b)}] (5 points):
+$$
+\lim_{(x,y)\to (0,0)}\frac{xy}{\sqrt{x^2+y^2}}
+$$
+\vspace{70mm}
+\end{enumerate}
+\item[\textbf{3.}] Find \underline{ALL} first partial derivatives of each of the following functions:
+\begin{enumerate}
+\item[\textbf{(a)}] (5 points):
+$$
+f(x,y)=x^2y+y^2x-xy+\sin(xy)
+$$
+\vspace{50mm}
+\item[\textbf{(b)}] (5 points):
+$$
+f(x,y,z)=\frac{x^2+y^2}{\sqrt{x+y+z}}
+$$
+\vspace{50mm}
+\end{enumerate}
+\item[\textbf{5.}] (10 points): If $z=x^2\sin(y)$, \hspace{1mm} where $x=s^2+t^2$ and $y=2st$, find $\frac{\partial{z}}{\partial{s}}$ and $\frac{\partial{z}}{\partial{t}}$.
+\vspace{115mm}	
+\item[\textbf{6.}] (20 points): Find the extreme values of $f(x,y)=e^{-xy}$ within the region $x^2+4y^2\leq1$.
+\vspace{110mm}
+
+\item[\textbf{7.}] Evaluate each of the following integrals or show that they are divergent.
+\begin{enumerate}
+\item[\textbf{(a)}] (5 points):
+$$
+\iint\limits_{D}ye^{x}\, dA
+$$
+where D is the triangular region with vertices $(0,0); (2.4); (6,0)$.
+\vspace{85mm}
+\item[\textbf{(b)}] (5 points):
+$$
+\int\limits_{-2}^{2}\int\limits_{-\sqrt{4-y^2}}^{\sqrt{4-y^2}}\int\limits_{\sqrt{x^2+y^2}}^{2}xz\, dzdxdy
+$$
+\end{enumerate}
+\vspace{80mm}
+\item[\textbf{8.}] (15 points): Find the volume of the solid that lies above the cone $z = \sqrt{x^2+y^2}$ and below the sphere $x^2+y^2+z^2= 5z$.
+
+
+\item[\textbf{9.}] (15 points): Evaluate $\int\limits_{C}y^2\, dx + x\, dy$ \hspace{1mm} where $C$ is the line segment from $(-2,4)$ to $(4,6)$.
+\vspace{95mm}
+\item[\textbf{10.}] (20 points): Use the \underline{Fundamental Theorem for Line Integrals} to evaluate $\int\limits_{C}\vec{F}\cdot d\vec{r}$, \hspace{1mm} where $\vec{F}(x,y)=\langle 4x^3y^2-2xy^3, 2x^4y-3x^2y^2+4y^3\rangle$ \hspace{1mm} and
+$\vec{r}(t)=\langle t+\sin(\pi t), 2t+\cos(\pi t)\rangle$ \hspace{1mm} for $0\leq t \leq 1$.
+\vspace{200mm}
+\item[\textbf{11.}] (20 points): Find the area of the surface with vector equation $\vec{r}(u,v)=\langle u\cos v, u\sin v, v\rangle$ with $0 \leq u \leq 1$ and $0 \leq v \leq \pi$.
+\vspace{200mm}
+\item[\textbf{12.}] (20 points): Use \underline{Stokes' Theorem} to evaluate $$\int\limits_{C}(y+\sin x)\, dx +(z^2+\cos y)\, dy + x^3\, dz$$ where $C$ is the curve given by $\vec{r}(t)=\langle \sin t, \cos t, \sin(2t)\rangle$ for $0 \leq t \leq 2\pi$.  Observe that $C$ lies on the surface $z=2xy$.
+\vspace{200mm}
+\item[\textbf{13.}] (20 points): Calculate the flux of $\vec{F}$ across \textit{S} if $\vec{F}(x,y, z)=\langle x^2z^3, 2xyz^3, xz^4\rangle$ and \textit{S} is the surface of the box with vertices $(\pm 1, \pm 2, \pm 3)$
+\vspace{220mm}
+\end{enumerate}
+
+
+\title{Bangin' Bonus Problems by Yara}
+
+\textbf{Problem 1} Consider two spheres of radius one that intersect such that the leftmost point of the right hand sphere is at the center of the left hand sphere. Find the volume of the region of intersection.
+
+$Hint:$ It might help to try the easier problem first- consider two intersecting (in an analogous way) circles of radius 1, find the area of intersection)
+
+\vspace{110mm}
+
+\textbf{Problem 2} Using triple integrals, prove that the volume of a parallelpiped is equal to the scalar triple product.
+
+\vspace{85mm}
+
+\textbf{Problem 3} Let S be the the box formed by the planes $x=0, y=0, z=0, x=1, y=1, z=1$ excluding the top face, oriented outward. Let $\textbf{F}=<yz^2, xy, x^2>$. Evaluate 
+$$
+\iint\limits_{S}\textbf{F}\, d\textbf{S}
+$$
+
+\vspace{75mm}
+
+\textbf{Problem 4} Find the volume of the solid bounded by (both parts of, i.e. both the pieces above and below the xy-plane) the cone $z^2=x^2+y^2$ and the sphere $x^2+y^2+z^2=1$
+
+(Try this using both double and triple integrals!)
+
+\vspace{90mm}
+
+\textbf{Problem 5} Let D be the region outside of $D_1={\lbrace(x,y): x^2+(y-2)^2 \leq 4}\rbrace$ but inside the region $D_2={\left\lbrace (x,y):x^2+(y-3^2) \leq 9\right\rbrace}$. Evaluate 
+$$
+\iint\limits_{D}(x+y)\, dA
+$$
+
+\vspace{75mm}
+
+
+\textbf{Problem 6} Let C be the curve of intersection of the cylinder $y^2+z^2=1$ and the plane $x+y+z=1$, oriented clockwise when viewed from above. Let $\textbf{F}=<e^xyz, xe^yz, xcosy>$ Evaluate the line integral $$
+\int\limits_{C}\textbf{F}\, d\textbf{r}
+$$
+
+\vspace{95mm}
+
+
+\textbf{Problem 7} Find the minimum distance between the lines $(x,y,z)=t(1,1,1)$ and $(x,y,z)=(-1,2,1)+s(1,0,-1)$ for $t,s \in \mathbb{R}$
+
+\vspace{100mm}
+
+
+\textbf{Problem 8} (this is basically the coolest problem I have ever seen) Find the volume of the piece of the sphere $x^2+y^2+z^2=1$ cut off by the plane $x+y+z=1$.
+
+\vspace{95mm}
+
+
+\textbf{Problem 9} (if you can do this problem, you will certainly pass calc 3)
+Evaluate the line integral where C is the curve of intersection of $x^2+3y^2=6$ and $z=x^2-y^2$ oriented clockwise when viewed from above.
+
+\vspace{100mm}
+
+\textbf{Problem 10} Let S be the lateral surface of a cone of radius 1 and height 2 parametrized as $(x,y,z)=(rcos\theta, rsin\theta, 2(1-r))$ oriented inward. Let $\textbf{F}=<x,y,0>$. Evaluate 
+$$
+\iint\limits_{S}\textbf{F}\, d\textbf{S}
+$$
+
+$Hint:$ The formula for the volume of a cone is $V=\frac{1}{3} \pi R^2H$
+
+\vspace{75mm}
+
+\textbf{Spatial Reasoning Problem} (this will help for triple integrals and stuff. mostly it's just awesome) Describe (verbally, pictorally, spiritually, whatever you want) the region of intersection of three cylinders of radius 1 if the cylinders all intersect orthogonally.
+
+\end{document}
